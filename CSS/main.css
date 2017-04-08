@@ -1,0 +1,194 @@
+@font-face
+{
+    font-family: "gruppo";
+    src: url("../Assets/Fonts/Gruppo/gruppo-regular-webfont.eot");
+    src: url("../Assets/Fonts/Gruppo/gruppo-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../Assets/Fonts/Gruppo/gruppo-regular-webfont.woff") format("woff"),
+         url("../Assets/Fonts/Gruppo/gruppo-regular-webfont.woff2") format("woff2"),
+         url("../Assets/Fonts/Gruppo/Gruppo-Regular.ttf") format("truetype"),
+         url("../Assets/Fonts/Gruppo/gruppo-regular-webfont.svg#grupporegular") 
+         format("svg");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+    height: 100%;
+}
+
+header
+{
+    background-color: #333333;
+    min-width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+header ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: -webkit-flex; /*For Safari*/
+    justify-content: center;
+}
+
+header li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+header li
+{
+    float: left;
+    border-right: 1px solid #AAAAAA;
+}
+header li:last-child
+{
+    border: none;
+}
+
+body
+{
+    position: relative;
+    color: white;
+    background-color: #555;
+    font-family: "gruppo";
+    font-weight: bold;
+    table-layout: fixed;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 6rem;
+}
+
+p a:hover
+{
+    color: #DDDDDD;
+}
+
+
+a:link
+{
+    color: #FFFFFF;
+}
+a:visited
+{
+    color: #FFFFFF;
+}
+li a:hover:not(.active)
+{
+    background-color: #111111;
+}
+a:active
+{
+    color: #888888;
+}
+
+img
+{
+    border-style: solid;
+    border-color: #FFF;
+    border-width: 5px;
+    border-radius: 8px;
+}
+
+.active
+{
+    background-color: #4747D1; 
+}
+
+.wrap
+{
+    position: relative;
+    margin: 0 auto;
+    width: 2560px;
+
+}
+
+.content, .noticebox p
+{
+    padding: 0px 50px;
+}
+
+.content li
+{
+    padding: 5px 0px;
+}
+
+.notice
+{
+    color: #00E600;
+}
+.noticebox
+{
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
+    left: 0px;
+    background-color: #666;
+    padding: 5px;
+}
+
+#pagetitle
+{
+    text-align: center;
+}
+
+#footer
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    float: left;
+    background-color: #333;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: left;
+}
+#footer p
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*---------------------Pokedex---------------------*/
+.pokedextable
+{
+    padding: 20px 0px;
+}
+
+.pokedextable img
+{
+    border-style: none;
+}
+
+.pokedextable table
+{
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pokedextable table, th, td
+{
+    border: 2px solid #FFFFFF;
+}
+
+.pokedextable td
+{
+    padding: 10px 10px;
+}
+
+.pokedextable a:hover
+{
+    color: #CCCCCC;
+}
+/*---------------------Pokedex---------------------*/
