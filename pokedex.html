@@ -1,67 +1,87 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <link rel="stylesheet" href="CSS/main.css"/>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <title>Pokedex</title>
-    </head>
+    <link rel="stylesheet" href="css/main.css"/>
+    
+    <!--Metadata-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
+    <title>Pokedex</title>
+</head>
 
-        <div id="pagetitle">
-            <h1>
-                First Gen Pokemon Chart
-            </h1>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TanglingTreats</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Project
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="pokedex.html">Pokedex</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <header> 
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="about.html"> About </a></li>
-                <li><a href="portfolio.html"> Portfolio </a></li>
-                <li><a class="active" href="pokedex.html"> Pokedex Practice </a></li>
-            </ul>
-        </header>
+    <div class="container">
+        <h1 class="display-4 border-bottom border-dark mb-5">Pokedex</h1>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Image</td>
+                    <th scope="col">Name</td>
+                    <th scope="col">Type</td>
+                    <th scope="col">Evolves To</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
+                    <td>Bulbasaur</td>
+                    <td>Grass/Poison</td>
+                    <td><a class="nav-link" href="http://pokemon.wikia.com/wiki/Ivysaur " target="_blank">Ivysaur</a></td>
+                </tr>
+                <tr>
+                    <td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
+                    <td>Charmander</td>
+                    <td>Fire</td>
+                    <td><a class="nav-link" href="http://pokemon.wikia.com/wiki/Charmeleon " target="_blank">Charmeleon</a></td>
+                </tr>
+                <tr>
+                    <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
+                    <td>Squirtle</td>
+                    <td>Water</td>
+                    <td><a class="nav-link" href="http://pokemon.wikia.com/wiki/Wartortle" target="_blank">Wartotle</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <div class="pokedextable">
-            <table>
-                <thead>
-                    <tr>
-                        <td>Image</td>
-                        <td>Name</td>
-                        <td>Type</td>
-                        <td>Evolves To</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
-                        <td>Bulbasaur</td>
-                        <td>Grass/Poison</td>
-                        <td><a href="http://pokemon.wikia.com/wiki/Ivysaur " target="_blank">Ivysaur</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
-                        <td>Charmander</td>
-                        <td>Fire</td>
-                        <td><a href="http://pokemon.wikia.com/wiki/Charmeleon " target="_blank">Charmeleon</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
-                        <td>Squirtle</td>
-                        <td>Water</td>
-                        <td><a href="http://pokemon.wikia.com/wiki/Wartortle" target="_blank">Wartotle</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div id="footer">
-            <p>
-                Copyright TanglingTreats 2016 - 2017. &nbsp&nbsp Updated 10 January 2017.
-                <span style="float: right">You can contact me at edwintang10@yahoo.com.sg</span>
-            </p>
-        </div>
-
-    </body>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
