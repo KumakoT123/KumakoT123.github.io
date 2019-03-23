@@ -9,10 +9,12 @@
     <!--Metadata-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Pokedex</title>
+    <title>Scorekeeper</title>
+
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-md navbar-light mb-5">
         <div class="container">
             <a class="navbar-brand" href="index.html">TanglingTreats</a>
@@ -46,43 +48,50 @@
     </nav>
 
     <div class="container">
-        <h1 class="display-4 border-bottom border-dark mb-5">Pokedex</h1>
-        
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Image</td>
-                    <th scope="col">Name</td>
-                    <th scope="col">Type</td>
-                    <th scope="col">Evolves To</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
-                    <td>Bulbasaur</td>
-                    <td>Grass/Poison</td>
-                    <td><a class="nav-link" href="http://pokemon.wikia.com/wiki/Ivysaur " target="_blank">Ivysaur</a></td>
-                </tr>
-                <tr>
-                    <td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
-                    <td>Charmander</td>
-                    <td>Fire</td>
-                    <td><a class="nav-link" href="http://pokemon.wikia.com/wiki/Charmeleon " target="_blank">Charmeleon</a></td>
-                </tr>
-                <tr>
-                    <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
-                    <td>Squirtle</td>
-                    <td>Water</td>
-                    <td><a class="nav-link" href="http://pokemon.wikia.com/wiki/Wartortle" target="_blank">Wartotle</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <h1 class="display-4 border-bottom border-dark mb-3 text-center">Scorekeeper</h1>
+
+        <h1 id="message" class="d-none display-4 text-center mb-2"><span id="player"></span> wins!</h1>
+
+        <h1 class="display-4 my-3 text-center"><span id="display-p1">0</span> : <span id="display-p2">0</span></h1>
+
+        <p class="text-center">Playing to: <span id="score-limit">5</span></p>
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10">
+                <div class="input-group mb-3">
+                    <input type="number" min="0" placeholder="How many points are you playing to?" class="form-control">
+                    <div class="input-group-append">
+                        <button id="btn-player1" class="btn btn-light">Player 1</button>
+                        <button id="btn-player2" class="btn btn-light">Player 2</button>
+                        <button id="btn-reset" class="btn btn-light">Reset</button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Player 1 name" id="player1Name" class="form-control">
+                    <input type="text" placeholder="Player 2 name" id="player2Name" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10 border">
+                <p>How to use:</p>
+                <p>Key in your desired play score in the textbox.</p>
+                <p>Whenever someone wins, click on the respective button to add a score to the scoreboard!</p>
+                <p>Typing in your player name is unnecessary unless you want to do so.</p>
+                <p>In any case, have fun!</p>
+            </div>
+        </div>
+
     </div>
+
+
+    <!--Custom JS-->
+    <script src="js/scorekeep.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
