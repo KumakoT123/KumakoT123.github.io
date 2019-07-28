@@ -1,19 +1,23 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Latest compiled and minified CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="js/lib/jquery-3.4.1.min.js" text="text/javascript"></script>
+    <link href="css/todo.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/colorgame.css"/>
-    
-    <!--Metadata-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">   
-
-    <title>Color Game</title>
+    <title>Todo List</title>
 </head>
-    
 <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
         <div class="container">
             <a class="navbar-brand" href="index.html">TanglingTreats</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +35,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Project
                         </a>
@@ -46,34 +50,19 @@
             </div>
         </div>
     </nav>
-
-    <h2 class="display-4 text-light text-center py-3"> The 
-    </br>
-        <span id=colorDisplay>RGB</span> 
-    </br>
-        Color Game</h2>
-    <div id="stripe" class="text-center mb-3">
-        <button id="btn-reset">New Colors</button>
-        <span id="msg"></span>
-        <button class="mode">Easy</button>
-        <button class="mode selected">Hard</button>
-    </div>
+    
     <div id="container">
+    <h1>To-Do List <span id="toggler"><i class="fa fa-plus"></i></span></h1>
+        <input type="text" placeholder="Add New Todo">
 
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        
+        <ul id="todo-list">
+            <li class="todo-item"> <span class="trash"><i class="fa fa-trash"></i></span> Potions Class</li>
+            <li class="todo-item"> <span class="trash"><i class="fa fa-trash"></i></span> Buy new robes</li>
+            <li class="todo-item"> <span class="trash"><i class="fa fa-trash"></i></span> Visit Hagrid</li>
+        </ul>
     </div>
 
-    <!--Custom JS-->
-    <script src="js/colorgame.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/todo.js" text="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
