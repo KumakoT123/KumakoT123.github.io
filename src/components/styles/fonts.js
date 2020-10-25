@@ -8,6 +8,10 @@ export const large = {
     fontSize: 35
 }
 
+export const mediem = {
+    fontSize: 25
+}
+
 export const headingFont = {
     ...fontType,
     fontWeight: 100
